@@ -1,0 +1,21 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "legen.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "dammit": "^0.5.1",
+    "js-synonyms": "^1.0.4",
+    "pokemon": "^2.3.3",
+    "superheroes": "^3.0.0",
+    "supervillains": "^3.0.0",
+    "thesaurus": "0.0.1"
+  }
+}

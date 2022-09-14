@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LeBronify Machine</title>
+    <link rel="icon" href="img/icon.png" type="image/icon type">
+    <meta name="viewport" content="width=device-width,  initial-scale=1, shrink-to-fit=yes">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6296615753097485"
+     crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+</head>
+<body>
+    <div id = "top-box" class="container border">
+        <span class="float-right m-top-right infolink" data-toggle="modal" data-target="#myModal"><b></b></span>
+        <h2 class="text-center title"><span id="Le">Le</span>Word Generator</h2>
+        <div class="row-2">
+            <div class="col-12 icon-bar">
+                <div name="work_days" id="category">
+                    <button id="synb" class="categories-active" value="1">LeBronify</button>
+                    <button id="westb"class="categories" value="4">Westbrookify</button>
+                    <button id="herob" class="categories" value="2">Hero/Villain</button>
+                    <button id="pokemonb"class="categories" value="3">Pokemon</button>
+                </div>
+            </div> 
+            <div class="col-1 col-sm-2"></div>
+            <div class="col-10 col-sm-8">
+                <h4 id="intro" class="question text-with-shadow">Enter a word you would like to LeBronify</h4>
+                <div class="input-group mb-3"><!-- USED TO BE DIV -->
+                    <input id='entry' name="textdata" type="text" class="form-control shadow" placeholder="Ex: cold, hot, fast, etc..">
+                    <div class="input-group-append"> 
+                        <button class="btn-info shadow" type="submit" name="submit" value="submit" id="butn">Search</button>
+                        <script src="/js/bundle.js"></script>
+                    </div>
+                </div>
+                <div class="out-box">
+                    <p class="list-title"><b><span id="output1"></span></b></p>
+                    <ul id="l1" class="border height-200 shadow repeating-counter-rule" data-clipboard-target=".copy-text"></ul>
+                    </ul>
+                    <div class="col-12 text-center">
+                        <p class="search-result"><span id="search-result"></span></p>
+                        <button id="refresh" class="fa fa-refresh fa-spin"></button>
+                        <script src="/js/bundle.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 icon-bar">
+            <!-- <span class="icons" href="#"><span><a href="https://www.reddit.com/r/Narcode/" target="_blank">r/Narcode</a></span></span> -->
+            <span id = 'twitter' class="icons" href="#"><span><a href="https://twitter.com/emiliodotexe" target="_blank">@emiliodotexe</a></span></span>
+            <span id="donate" class="icons" href="#">  <span>Did you enjoy this site? <a href="https://ko-fi.com/emiliodotexe" target="_blank">Buy me a cup of coffee.</a></span></span>
+            <span id="social-icons" class="icons" href="#"><span>
+                <p id="share-text">Share</p>
+                <!-- <button class="social-media-btn"><a class="fab fa-linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url='//www.lebronifymachine.com'" target="_blank"></a></button> -->
+                <button class="social-media-btn"><a class="fab fa-twitter" href="https://twitter.com/share?url=www.lebronifymachine.com" target="_blank"></a></button>
+                <button class="social-media-btn"><a class="fab fa-facebook-f" href="https://www.facebook.com/sharer/sharer.php?u=www.lebronifymachine.com" target="_blank"></a></button>
+                <button class="social-media-btn"><a class="fab fa-reddit" href="https://reddit.com/submit?url=www.lebronifymachine.com" target="_blank"></a></button>
+                <!-- <button class="social-media-btn"><a class="fab fa-whatsapp" href="https://wa.me/whatsappphonenumber/?text=www.lebronifymachine.com" target="_blank"></a></button> -->
+                <div class="link-container">
+                    <button id="copy-link" class="copy-btn" type="button" data-clipboard-text="https://www.lebronifymachine.com">Copy Link</button>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+                    <script>
+                        var btn = document.getElementById('copy-link');
+                        var clipboard = new ClipboardJS(btn);
+                  
+                        clipboard.on('success', function (e) {
+                          console.info('Action:', e.action);
+                          console.info('Text:', e.text);
+                          console.info('Trigger:', e.trigger);
+                        });
+                  
+                        clipboard.on('error', function (e) {
+                          console.info('Action:', e.action);
+                          console.info('Text:', e.text);
+                          console.info('Trigger:', e.trigger);
+                        });
+                      </script>
+                    <!-- <script src="/js/bundle.js"></script>    -->
+                </div></span></span>
+        </div>    
+        <div class="col-12"><h4 class="version">-Version 2.5-</h4></div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel"><b>The LeBronify Machine</b></h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                    <center><b>Get Started</b></center> <br>
+                    <b>Lebronify: </b>Enter a word in the search box. The machine will generate a list of synonyms
+                    and run its algorithm to transform each synonym into a 'LeWord'.<br>
+                    <b>Westbrookify: </b>Enter a word in the search box. The machine will generate a list of synonyms
+                    and run its algorithm to transform each synonym into the likeness of NBA All-Star Russell Westbrook's name.<br>
+                    <b>Hero/Villain: </b>A list of popular hero and villain names is randomly generated and LeTransformed. <i>No input required.</i><br>
+                    <b>Pokemon: </b>A list of pokemon names is randomly generated and LeTransformed. <i>No input required.</i><br>    
+                    </p>
+                </div>
+                <div class="modal-body">
+                    <p><b>Logic:</b> The 1st and 3rd letter of every word must always be capitalized.
+                        <ul id="logic">
+                        <li>If an 'o' is found in the 1st or 2nd slot. Attach 'LeBr' to word. (ie.: Ostrich &#8594 LeBrostrich)</li>
+                        <li>If an 'i' is found in the 1st or 2nd slot. Swap 'i' with 'Le'. (ie.: Imagination &#8594 LeMagination)</li>
+                        <li>If an 'e' is found in the 1st or 2nd slot. Place 'L' accordingly. (ie.: Elephant &#8594 LeLephant ) </li>
+                        <li>Else: Attach 'Le' to the front of the word.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <p>
+                    This project is in large part dedicated to the <a href="https://www.reddit.com/r/nba/" target="_blank">r/nba community</a>. 
+                    Lebron James is a high-level athlete and a bonafide superstar in the NBA. The play on words 
+                    originated as a meme where you take the first part of Lebron James' name ("Le") and 
+                    attach it to a word of your choosing.<br>
+                    <b>Updates: <br>Edited the algorithm's logic, cosmetic changes, patch copy link issue (v2.2).
+                        <br>
+                        Desktop view upgraded, westbrookify implemented (v2.3).
+                    </b>
+                    </p>
+                </div>
+                <button class="close-btn" type="button" data-dismiss="modal">Close [X]</button></button>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
+</body>
+</html>
